@@ -76,7 +76,7 @@ def autobuy(driver):
             print("結帳按鈕未在預期時間內出現。")
             raise
     except TimeoutException:
-        print("購買按鈕未在預期時間內出現。")
+        print("購買按鈕未在預期時間內出現（尚未開賣）。")
         raise
     return 
 
