@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException, TimeoutException, NoAlertPresentException, UnexpectedAlertPresentException
 import json, time
 from settings import (
-    URL, URL1,
+    URL, TEST_URL,
     CARD_NUM1, CARD_NUM2, CARD_NUM3, CARD_NUM4, 
     VALID_MONTH, VALID_YEAR, VALID_CODE
 )
@@ -104,7 +104,7 @@ if __name__ == "__main__":
                     print(f"點擊按鈕 {checkbox_id}")
                     # print(f"未找到原因: {str(e)}")
         except Exception as e:
-            print(f"未找到按钮 {checkbox_id}")
+            print(f"未找到勾選框 {checkbox_id}")
             pass
         try:
             # start_time = time.time()
